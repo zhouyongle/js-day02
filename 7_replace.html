@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //高频鄙视题: 
+    //将每个单词首字母改为大写字母: 
+    var str="you can you up";
+    //       ↓   ↓   ↓   ↓
+    str=str.replace(
+      /\b[a-z]/g,
+      //       y c y u
+      //       ↓ ↓ ↓ ↓
+      function(keyword){
+        console.log(`自动调用了一次回调函数,keyword接住了${keyword},回调函数返回了${keyword.toUpperCase()}`);
+        return keyword.toUpperCase();
+        //            转为 大  写
+      }
+    )
+    console.log(str);//You Can You Up
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // var str="   zhang dong   "
+    // //将左边空格替换为空串
+    // function lefttrim(str){
+    //   return str.replace(/^\s+/,"");
+    // }
+    // console.log(lefttrim(str));
+    // //将右边空格替换为空串
+    // function righttrim(str){
+    //   return str.replace(/\s+$/,"");
+    // }
+    // console.log(righttrim(str));
+    // //将两边都替换
+    // function bothtrim(str){
+    //   return str.replace(/^\s+|\s+$/g,"");
+    // }
+    // console.log(bothtrim(str));
+    //原生写法
+    var str="   zhang dong   "
+    console.log(str.trimRight());
+    console.log(str.trimLeft());
+    console.log(str.trim());
+  </script>
+</body>
+</html>

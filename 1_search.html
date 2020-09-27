@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>day02</title>
+  <script>
+
+  </script>
+</head>
+
+<body>
+
+
+  <!-- 所有js代码，必须放在body的结尾 -->
+<script>
+
+var input=prompt("请输入您要发送的消息");
+
+var i=input.search(/(wo|[我卧])\s*(cao|[草槽艹操擦])/i);
+
+if(i!=-1){
+  document.write(`<h1 style="color:red">您输入的包含敏感词汇，禁止发送</h1>`)
+}else{
+  document.write(`<h1 style="color:green">然哥说:${input}</h1>`)
+}
+</script>
+</body>
+</html>

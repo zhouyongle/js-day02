@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // var input=prompt("请输入您要发送的消息");
+
+    // var arr=input.match(/(wo|[我卧])\s*(cao|[草槽艹操擦])/i);
+
+    // if(arr!=null){
+    //   document.write(`<h1 style="color:red">您的第${arr.index+1}个词，输入了${arr[0]}敏感词，禁止发送</h1>`)
+    // }else{
+    //  document.write(`<h1 style="color:green">然哥说:${input}</h1>`)
+    // }
+    //match加g
+    // var str="小亮说：小红是我的朋友；小然说：朋友！小红是我的！小鸡鸡"
+    // str=str.replace(/小[\u4e00-\u9fa5]/g,"**");
+    // console.log(str);
+    //高级替换
+    var str="you can you up no can no bi bi"
+    str=str.replace(/\b[a-z]|[a-z]\b/g,function(keyword){
+      return keyword.toUpperCase();
+    })
+    console.log(str);
+    var s="no can no bi bi"
+    s=s.replace(/\b[a-z]|[a-z]\b/g,(transform)=>{
+      return transform.toUpperCase();
+    })
+    console.log(s);
+    //数组
+    // var arr=[1,2,3]
+    // arr.unshift(4);
+    // console.log(arr);
+  </script>
+</body>
+</html>
